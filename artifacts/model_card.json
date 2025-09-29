@@ -1,0 +1,25 @@
+{
+  "name": "Lasso-Prediccion-Peso-Fish",
+  "created_at": "2025-09-28 14:07:38",
+  "framework": "scikit-learn",
+  "python_version": "3.10.12",
+  "pandas_version": "2.3.0",
+  "sklearn_version": "1.7.0",
+  "optuna_version": "4.4.0",
+  "random_state": 42,
+  "features": [
+    "Species",
+    "Length1",
+    "Length2",
+    "Length3",
+    "Height",
+    "Width"
+  ],
+  "target": "Weight",
+  "cv_metric": "r2",
+  "cv_best_score": 0.9715038036463539,
+  "cv_best_params": {
+    "model__alpha": 0.011699785816691427
+  },
+  "test_metrics": 0.9726567890772276
+}
