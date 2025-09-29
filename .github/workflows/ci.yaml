@@ -37,6 +37,7 @@ jobs:
       - name: Run tests
         env:
           PYTHONPATH: ${{ github.workspace }}
+          ARTIFACTS_DIR: ${{ github.workspace }}/artifacts
         run: pytest -q
 
   build-and-push:

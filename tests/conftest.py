@@ -16,7 +16,6 @@ from src.app import create_app
 @pytest.fixture
 def client():
     """Flask test client with MODEL_PATH pointing to model."""
-    os.environ["ARTIFACTS_DIR"] = "/home/aleksei/Documentos/python/Kibernum/Machine Learning/Trabajo en clase/M10/EF/artifacts"
     app = create_app()
     app.config.update(TESTING=True)
     return app.test_client()
