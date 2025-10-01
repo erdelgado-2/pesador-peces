@@ -1,8 +1,8 @@
 # Predicción de pesos de peces
 
-Realizado para la evaluación final del modulo 10.
+Todos los pescadores alguna vez han tenido el problema de tener huincha para medir los peces, pero no pesa. Este proyecto es un prototipo de una posible solución.
 
-Este repositorio entrena un modelo simple de regresión para predecir el peso de los peces a partir de medidas anatomicas, y permite servirlo en una API REST.
+Este repositorio permite entrenar un modelo de regresión avanzado para predecir el peso de los peces a partir de medidas anatomicas, y permite servirlo en una API REST. De este modo todos los pescadores del mundo pueden disfrutar de tan increible innovación.
 
 ## Instalación:
 
