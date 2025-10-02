@@ -42,9 +42,3 @@ El servidor arroja los diccionarios de vuelta con el campo 'prediccion', que con
 
 ![image](./img/test_post.png)
 
-## CI/CD:
-
-El repositorio incluye integración continua básica usando GitHub Actions. 
-
-![image](./img/actions.png)
-
