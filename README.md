@@ -9,7 +9,7 @@ Este repositorio permite entrenar un modelo de regresión avanzado para **predec
 Instalar la imagen de docker y mapear algun puerto al puerto 5001. Por ejemplo:
 
 ```bash
-sudo docker run -p 4000:5001
+sudo docker run -d -p 4000:5001 ghcr.io/erdelgado-2/pesador-peces
 ```
 monta el servidor en el puerto 4000.
 
@@ -18,12 +18,27 @@ monta el servidor en el puerto 4000.
 
 ## Usar el servidor:
 
-La información del modelo se puede leer en el path /model-info
+La información del modelo se puede leer en el path /model-info usando método GET.
+
+```bash
+GET 0.0.0.0:4000/model-info
+```
 
 ![image](./img/test_get.png)
 
-Para realizar predicciones se debe pasar una lista de diccionarios con las siguientes claves:
-Species, Length1, Length2, Length3, Height, Width
+Para realizar predicciones se debe utilizar el método POST en el path /predict, y entregar una array de json con las siguientes claves:
+Species, Length1, Length2, Length3, Height, Width.
+
+```bash
+POST 0.0.0.0:4000/predict
+```
+Por ejemplo con el siguiente payload:
+
+```bash
+[{"Species": "Bream","Length1": 38,"Length2": 35.0,"Length3": 40.5,"Height": 10,"Width": 5.589}]
+```
+
+El servidor arroja los diccionarios de vuelta con el campo 'prediccion', que contiene la predicción realizada por el modelo.
 
 ![image](./img/test_post.png)
 
