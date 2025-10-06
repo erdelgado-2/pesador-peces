@@ -4,9 +4,9 @@ Todos los pescadores alguna vez han tenido el problema de tener huincha para med
 
 Este repositorio permite entrenar un modelo de regresión avanzado para **predecir el peso de los peces a partir de medidas anatomicas**, y permite servirlo en una API REST. De este modo todos los pescadores del mundo pueden disfrutar de tan increible innovación.
 
-#TODO Agregar el otro metodo de instalación
 ## Instalación:
 
+### Opción 1:
 Instalar la imagen de docker y mapear algun puerto al puerto 5001. Por ejemplo:
 
 ```bash
@@ -16,6 +16,13 @@ monta el servidor en el puerto 4000.
 
 ![image](./img/docker.png)
 
+### Opción 2:
+Clonar este repositorio y ejecutar 
+
+```bash
+python src/app.py
+```
+El servidor quedara montado en el puerto 5001.
 
 ## Usar el servidor:
 
